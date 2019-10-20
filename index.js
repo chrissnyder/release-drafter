@@ -46,9 +46,9 @@ module.exports = app => {
       return
     }
 
-    if (!isTriggerableBranch({ branch, app, context, config })) {
-      return
-    }
+//     if (!isTriggerableBranch({ branch, app, context, config })) {
+//       return
+//     }
 
     const { draftRelease, lastRelease } = await findReleases({ app, context })
     const {
